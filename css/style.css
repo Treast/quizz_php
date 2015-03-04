@@ -1,0 +1,273 @@
+/**********************************\
+              RESET
+\**********************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, _reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: middle;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, _reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, _reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, _reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, _reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, _reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, _reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 49, _reset.scss */
+input:focus {
+  outline: none;
+}
+
+/* line 53, _reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 7, style.scss */
+body {
+  margin: 0;
+  background-color: #34495e;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* line 13, style.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 17, style.scss */
+.container {
+  width: 654px;
+  margin: 40px auto;
+  color: #FFF;
+}
+
+/* line 23, style.scss */
+.questions {
+  position: relative;
+}
+
+/* line 27, style.scss */
+.lightbox {
+  position: fixed;
+  display: none;
+  margin-top: -40px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+/* line 37, style.scss */
+.box {
+  height: 80px;
+  width: 80px;
+  float: left;
+  border: 2px solid white;
+  text-align: center;
+  line-height: 80px;
+  font-size: 36px;
+  margin-left: -2px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+/* line 50, style.scss */
+.answer {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  left: 50%;
+  width: 680px;
+  height: 300px;
+  border: 2px solid #7f8c8d;
+  background-color: #2c3e50;
+  transform: translateX(-50%);
+  display: none;
+}
+
+/* line 62, style.scss */
+.answer .color {
+  margin-top: 40px;
+  float: left;
+  margin-left: 30px;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 69, style.scss */
+.answer .player {
+  float: left;
+  margin-top: 39px;
+  margin-left: 15px;
+}
+
+/* line 74, style.scss */
+.answer .question {
+  float: left;
+  width: 600px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* line 80, style.scss */
+.answer .response {
+  float: left;
+  font-style: italic;
+  color: #95a5a6;
+  margin-top: 40px;
+  margin-left: 30px;
+  display: none;
+}
+
+/* line 88, style.scss */
+.answer .number {
+  font-size: 26px;
+  color: #95a5a6;
+  float: left;
+  margin-top: 40px;
+  margin-left: 28px;
+}
+
+/* line 95, style.scss */
+.answer .get_answer {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  border-radius: 4px;
+  margin-top: 70px;
+}
+
+/* line 105, style.scss */
+.answer .countdown {
+  margin-top: 240px;
+  font-size: 22px;
+  margin-right: 60px;
+  float: right;
+}
+
+/* line 113, style.scss */
+.answer .close {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* line 120, style.scss */
+.question {
+  display: inline-block;
+}
+
+/* line 124, style.scss */
+.get_colors {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  border-radius: 4px;
+  margin-top: 250px;
+}
+
+/* line 134, style.scss */
+.leeroy {
+  color: #e67e22;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* line 140, style.scss */
+.players {
+  margin: 50px auto;
+}
+/* line 143, style.scss */
+.players img {
+  width: 90px;
+  height: 90px;
+}
+/* line 147, style.scss */
+.players .joueur {
+  float: left;
+  width: 100px;
+  text-align: center;
+  margin-right: 40px;
+}
+/* line 154, style.scss */
+.players .nom {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* line 159, style.scss */
+.players .points {
+  margin-top: 15px;
+}
+/* line 161, style.scss */
+.players .points span {
+  margin-top: -2px;
+  margin-bottom: 5px;
+  display: block;
+}
+/* line 168, style.scss */
+.players .up, .players .down {
+  display: inline-block;
+  color: #95a5a6;
+  margin: 10px 5px;
+  padding: 5px 7px;
+  border: 1px solid #95a5a6;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}

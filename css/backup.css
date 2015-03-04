@@ -1,0 +1,113 @@
+/* line 1, backup.scss */
+.box {
+  display: inline-block;
+  font-size: 46px;
+  line-height: 80px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: -5px;
+  width: 80px;
+  height: 80px;
+  background-color: #2c3e50;
+  border: 1px solid white;
+}
+
+/* line 14, backup.scss */
+.answer {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  left: 50%;
+  width: 840px;
+  height: 300px;
+  border: 2px solid #7f8c8d;
+  background-color: #2c3e50;
+  transform: translateX(-50%);
+  display: none;
+}
+
+/* line 26, backup.scss */
+.answer .color {
+  margin-top: 40px;
+  float: left;
+  margin-left: 30px;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 33, backup.scss */
+.answer .player {
+  float: left;
+  margin-top: 39px;
+  margin-left: 15px;
+}
+
+/* line 38, backup.scss */
+.answer .question {
+  float: left;
+  width: 600px;
+  margin-top: 160px;
+  margin-left: -117px;
+}
+
+/* line 44, backup.scss */
+.answer .response {
+  float: left;
+  font-style: italic;
+  color: #95a5a6;
+  margin-top: 190px;
+  margin-left: -117px;
+  display: none;
+}
+
+/* line 52, backup.scss */
+.answer .number {
+  font-size: 26px;
+  color: #95a5a6;
+  float: left;
+  margin-top: 100px;
+  margin-left: -80px;
+}
+
+/* line 59, backup.scss */
+.answer .get_answer {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  border-radius: 4px;
+  margin-top: 235px;
+}
+
+/* line 69, backup.scss */
+.answer .countdown {
+  margin-top: 240px;
+  font-size: 22px;
+  margin-right: 60px;
+  float: right;
+}
+
+/* line 77, backup.scss */
+.answer .close {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* line 84, backup.scss */
+.question {
+  display: inline-block;
+}
+
+/* line 88, backup.scss */
+.get_colors {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  border-radius: 4px;
+  margin-top: 235px;
+}
